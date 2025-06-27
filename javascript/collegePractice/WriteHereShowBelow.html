@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Writing</title>
+</head>
+
+<body>
+    <label for="textWriting">Write Here:</label>
+    <input type="text" placeholder="Enter your Text" id="textWriting">
+    <br>
+    <div id="boxWriting"></div>
+    <script>
+
+        let divStyle = document.querySelector("#boxWriting");
+        document.querySelector("#textWriting").addEventListener("input", function () {
+            document.querySelector("#boxWriting").textContent = document.querySelector("#textWriting").value;
+
+            if (document.querySelector("#textWriting").value == "") {
+                divStyle.style.border = "none";
+            } else {
+                divStyle.style.color = "blue";
+                divStyle.style.border = "2px solid black";
+            }
+        });
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matching Number</title>
+</head>
+
+<body>
+
+    <label for="mobileNumber">Password:</label>
+    <input type="text" id="mobileNumber">
+    <br>
+    <label for="confirmNumber">Confirm Password:</label>
+    <input type="text" id="confirmNumber"><br>
+    <button type="button" id="submit">Submit</button>
+
+    <script>
+        document.querySelector("#submit").addEventListener("click", () => {
+            const mobileNum = document.querySelector("#mobileNumber").value;
+            const confirmNum = document.querySelector("#confirmNumber").value;
+
+            if (mobileNum == "" || confirmNum == "" ) {
+                alert("Pagal he kya!");
+            }else if(mobileNum == confirmNum) {
+                alert("Hacker bhai hacker, aapne hack kr diya. Permission Granted"); 
+            }
+             else {
+                alert("Beta kya number likhta he!");
+            }
+        });
+    </script>
+
+</body>
+
+</html>

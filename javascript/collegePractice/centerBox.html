@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box</title>
+</head>
+
+<body>
+
+    <div id="middleBox"></div>
+
+    <script>
+        let box = document.querySelector("#middleBox");
+        let bodyBox = document.querySelector("body");
+        box.style.width = "100px";
+        box.style.height = "100px";
+        box.style.backgroundColor = "yellow";
+        document.documentElement.style.height = "100%";// sets parent element height
+        bodyBox.style.height = "100%";// if body 100% so which elements 100% thats not know
+        bodyBox.style.display = "flex";
+        bodyBox.style.justifyContent = "center";
+        bodyBox.style.alignItems = "center";
+
+    </script>
+</body>
+
+</html>

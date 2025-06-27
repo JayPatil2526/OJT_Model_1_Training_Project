@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Txt Editor</title>
+    <style>
+        #resDiv {
+            width: 50%;
+            min-height: 200px;
+            border: 1px solid gray;
+            padding: 10px;
+            white-space: pre-wrap;
+            background-color: #f4f4f4;
+        }
+
+        #codeshowing {
+            width: 50%;
+            height: 200px;
+        }
+
+        #container {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <textarea id="codeshowing" !>
+            
+        </textarea>
+        <div id="resDiv"></div>
+    </div>
+
+    <script>
+        const textarea = document.querySelector("#codeshowing");
+        const res = document.querySelector("#resDiv");
+
+        
+        textarea.innerHTML = ``;
+
+       
+       
+
+       
+        textarea.addEventListener("input", () => {
+            res.innerHTML = textarea.value;
+        });
+    </script>
+</body>
+
+</html>

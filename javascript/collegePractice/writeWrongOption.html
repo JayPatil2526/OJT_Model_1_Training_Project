@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Option</title>
+</head>
+<body>
+    <h1>How many legs does a cow have?</h1>
+    <button id="Btn1">4</button>
+    <button id="Btn2">5</button>
+    <button id="Btn3">8</button>
+    <button id="Btn4">3</button>
+    <h3 id="myh3"></h3>
+    <script>
+
+        
+        let answer = document.querySelector("#myh3");
+        document.querySelector("#Btn1").addEventListener("click", function () {
+            answer.textContent = "Correct";
+            answer.style.color = "green";
+        });
+        document.querySelector("#Btn2").addEventListener("click", function () {
+            answer.textContent = "Wrong";
+            answer.style.color = "red";
+        });
+        document.querySelector("#Btn3").addEventListener("click", function () {
+            answer.textContent = "Wrong";
+            answer.style.color = "red";
+        });
+        document.querySelector("#Btn4").addEventListener("click", function () {
+            answer.textContent = "Wrong";
+            answer.style.color = "red";
+        });
+        
+    </script>
+</body>
+</html>
