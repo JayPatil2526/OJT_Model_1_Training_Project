@@ -1,0 +1,27 @@
+[{
+  "_id": {
+    "$oid": "684be5da9469196ad7c73439"
+  },
+  "name": "jay",
+  "age": 20,
+  "star": 1,
+  "lname": "Patil"
+},
+{
+  "_id": {
+    "$oid": "684be5da9469196ad7c7343a"
+  },
+  "name": "Dhruv",
+  "age": 21,
+  "star": 1,
+  "lname": "Prajapati"
+},
+{
+  "_id": {
+    "$oid": "684be691b7e04d8d9481a8a1"
+  },
+  "age": 22,
+  "star": 1,
+  "lname": "Parmar",
+  "name": "Manthan"
+}]
