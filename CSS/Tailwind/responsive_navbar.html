@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive College Website</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="flex flex-col lg:flex-row w-full justify-between bg-[#8f2705] text-white py-2 px-2 sm:px-4 lg:px-8 gap-2 lg:gap-0">
+        <div class="leftsideNav flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-5">
+            <p class="text-xs sm:text-sm">
+                Admission Helpline: +91-79-35201300 / +91-79-66046300 
+            </p>
+            <p class="flex items-center gap-1 text-xs sm:text-sm">
+                <i class="fa-brands fa-whatsapp"></i>
+                +91-90990 63464
+            </p>
+        </div>
+        
+        <div class="rightsideNav flex flex-col sm:flex-row justify-between gap-2 sm:gap-5">
+            <div class="rightsideNav-1 flex items-center">
+                <ul class="flex flex-wrap justify-start sm:justify-between list-none items-center gap-2 sm:gap-3 text-xs sm:text-sm font-medium">
+                    <li class="hover:underline italic cursor-pointer">Exam</li>
+                    <li class="hover:underline italic cursor-pointer">IQAC</li>
+                    <li class="hover:underline italic cursor-pointer">CAREERS</li>
+                </ul>
+            </div>
+            <div class="rightsideNav-2 flex items-center gap-2 sm:gap-3">
+                <i class="fa-brands fa-facebook cursor-pointer hover:opacity-80 transition-opacity"></i>
+                <i class="fa-brands fa-instagram cursor-pointer hover:opacity-80 transition-opacity"></i>
+                <i class="fa-brands fa-linkedin cursor-pointer hover:opacity-80 transition-opacity"></i>
+                <i class="fa-brands fa-youtube cursor-pointer hover:opacity-80 transition-opacity"></i>
+                <i class="fa-brands fa-x-twitter cursor-pointer hover:opacity-80 transition-opacity"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Navigation Section -->
+    <section class="flex flex-col lg:flex-row justify-between items-center text-[#8f2705] font-medium w-full px-2 sm:px-4 py-2 lg:py-4">
+        <!-- Logo -->
+        <div class="w-full lg:w-1/6 flex justify-center lg:justify-start mb-4 lg:mb-0">
+            <!-- Placeholder for logo -->
+             <div class="w-32 sm:w-40 lg:w-48 h-16 sm:h-20 lg:h-24">
+                <img src="silverOakLogo.webp" alt="Silver Oak Logo" class="w-full h-full object-contain">
+             </div>
+            <!-- <div class="w-32 sm:w-40 lg:w-48 bg-gray-200 rounded-lg flex items-center justify-center h-16 sm:h-20">
+                 <img src="silverOakLogo.webp" alt="Logo" class="w-48 md:w-32 lg:w-48 sd">
+                 <img src="silverOakLogo.webp" alt="Logo" class="w-48 md:w-32 lg:w-48 sd">
+                <span class="text-xs text-gray-500">Logo</span>
+            </div> -->
+        </div>
+
+        <!-- Navigation Menu -->
+        <div class="w-full lg:w-4/6 flex items-center justify-center">
+            <ul class="hidden lg:flex justify-between list-none items-center w-full text-sm xl:text-base hover:*:text-[#b83410] *:transition-colors *:cursor-pointer">
+                <li>About</li>
+                <li>Admission</li>
+                <li>Academics</li>
+                <li>Events</li>
+                <li>Gallery</li>
+                <li>Placements</li>
+                <li>Student Corner</li>
+                <li>Approvals</li>
+                <li>Contact</li>
+            </ul>
+            
+            <!-- Mobile Menu Button -->
+            <button class="lg:hidden flex items-center px-3 py-2 border rounded text-[#8f2705] border-[#8f2705] hover:bg-[#8f2705] hover:text-white transition-colors" onclick="toggleMobileMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Spacer -->
+        <div class="hidden lg:block lg:w-1/6"></div>
+    </section>
+
+    <!-- Mobile Menu (Hidden by default) -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-t border-gray-200 px-4 py-2">
+        <ul class="flex flex-col gap-3 text-[#8f2705] font-medium">
+            <li class="py-2 border-b border-gray-100 cursor-pointer hover:text-[#b83410] transition-colors">About</li>
+            <li class="py-2 border-b border-gray-100 cursor-pointer hover:text-[#b83410] transition-colors">Admission</li>
+            <li class="py-2 border-b border-gray-100 cursor-pointer hover:text-[#b83410] transition-colors">Academics</li>
+            <li class="py-2 border-b border-gray-100 cursor-pointer hover:text-[#b83410] transition-colors">Events</li>
+            <li class="py-2 border-b border-gray-100 cursor-pointer hover:text-[#b83410] transition-colors">Gallery</li>
+            <li class="py-2 border-b border-gray-100 cursor-pointer hover:text-[#b83410] transition-colors">Placements</li>
+            <li class="py-2 border-b border-gray-100 cursor-pointer hover:text-[#b83410] transition-colors">Student Corner</li>
+            <li class="py-2 border-b border-gray-100 cursor-pointer hover:text-[#b83410] transition-colors">Approvals</li>
+            <li class="py-2 cursor-pointer hover:text-[#b83410] transition-colors">Contact</li>
+        </ul>
+    </div>
+
+    <!-- Hero Image -->
+    <div class="w-full">
+        <!-- Placeholder for college image -->
+         <div class="w-full overflow-hidden">
+            <img src="collegeImg.jpg" alt="College Photo" class="w-full h-48 sm:h-64 md:h-80 lg:h-96 object-cover">
+         </div>
+        <!-- <div class="w-full h-48 sm:h-64 md:h-80 lg:h-96 bg-gradient-to-r from-blue-400 to-blue-600 flex items-center justify-center">
+             <img src="collegeImg.jpg" alt="College Photo" class="text-white text-lg sm:text-xl">
+            <span class="text-white text-lg sm:text-xl">College Photo</span>
+        </div> -->
+    </div>
+
+    <!-- Action Buttons Section -->
+    <div class="bg-[#8f2705] text-white flex flex-col sm:flex-row justify-center sm:justify-evenly p-4 gap-4 sm:gap-0 items-center font-medium">
+        <div class="bg-[#dbfed9] text-[#007550] rounded-full w-full sm:w-auto">
+            <p class="p-3 px-4 sm:px-6 flex items-center justify-center sm:justify-start gap-3 sm:gap-4 text-sm sm:text-base">
+                <i class="fa-regular fa-dot-circle animate-ping fa-sm"></i>
+                360° VIRTUAL VIEW CAMPUS
+            </p>
+        </div>
+        <div class="bg-[#dbfed9] text-[#007550] p-3 px-4 sm:px-6 rounded-full flex items-center justify-center sm:justify-start gap-3 sm:gap-4 w-full sm:w-auto">
+            <i class="fa-regular fa-dot-circle animate-ping fa-sm"></i>
+            <p class="text-sm sm:text-base">EXPLORE YOUR CAREERS</p>
+        </div>
+    </div>
+
+    
+</body>
+</html>
